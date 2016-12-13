@@ -21,11 +21,12 @@ create table StateResult(
 
 create table Ran(
   Year int null,
-  CID int null,
   PID int null,
-  Votes int null,
-  VotesP float null,
+  CID int null,
+  VID int null,
   EVotes int null,
-  EvotesP float null
+  EVotesP float null,
+  PVotes int null,
+  PVotesP float null
 );
 
