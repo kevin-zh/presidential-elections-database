@@ -24,4 +24,6 @@ from Ran R, Party PTY, Candidate P, Candidate VP, StateResult S where R.Year = 2
 
 ---QUERY STATE RESULTS (BY YEAR AND STATE)
 select PTY.PartyName, P.Name as PresCandidate, VP.Name as VPCandidate, S.State, S.PVotes, S.PVotesP, S.EVotes 
-from Ran R, Party PTY, Candidate P, Candidate VP, StateResult S where R.Year = 2016 and S.Year = R.Year and R.PID = S.PID and S.State = 'Maryland' and R.PID=PTY.PID and R.CID=P.CID and R.VID=VP.CID;
+from Ran R, Party PTY, Candidate P, Candidate VP, StateResult S where R.Year = 2008 and S.Year = R.Year and R.PID = S.PID and S.State = 'Maryland' and R.PID=PTY.PID and R.CID=P.CID and R.VID=VP.CID;
+
+
