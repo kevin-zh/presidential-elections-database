@@ -14,10 +14,10 @@ create table Election(
   WinnerCID int null
 );
 
-create table StateResult(
-  SID int null,
-  WinnerCID int null
-);
+--create table StateResult(
+--  SID int null,
+--  WinnerCID int null
+--);
 
 create table Ran(
   Year int null,
@@ -28,5 +28,15 @@ create table Ran(
   EVotesP float null,
   PVotes int null,
   PVotesP float null
+);
+
+create table StateResult(
+  Year int null,
+  State varchar2(50) null,
+  PID int null,
+  CID int null,
+  PVotes int null,
+  PVotesP float null,
+  EVotes int null
 );
 
